@@ -1,0 +1,18 @@
+relatorio
+
+Ao realizar testes com alguns números, pude observar alguns resultados interessantes:
+
+À medida que crescem os números, eles muitas vezes acabam chegando nos mesmos números que os menores chegaram antes de convergir para o 1, resultando a partir de então, no mesmo padrão.
+Pude notar, em todos os números que chequei, que a partir do número 5, todos os números chegam, em algum momento, no 16, tomando, então, o mesmo caminho até chegar em 1.
+Isso ocorre com outros números, além do 16, mas à medida que vão se afastando do último passo, vão se tornando menos frequente suas repetições.
+
+Sempre que o número chega em alguma potência de 2, o número de passos que serão dados a partir de então será o expoente da potência por exemplo,
+16 = 2^4 e precisa de 4 passos para convergir em 1.
+
+Os números primos parecem percorrer um maior número de passos para chegar em 1.
+
+Os números múltiplos de 3 que são ímpares, em geral, percorrem maior número de passos para chegar em 1.
+
+Quanto a simplificações no código, observei que podia armazenar o número de passos de alguns números, para que
+Como  para o caso de n ser ímpar, sei que 3 * n + 1 é par, pode-se dividir o resultado por 2 e adicionar um passo sem verificar se ele é par.
+Quando utilizei o programa recebendo os inteiros 1 e 837799, a diferença no tempo de execução foi de aproximadamente 0,2 segundos.
