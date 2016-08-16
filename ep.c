@@ -9,7 +9,7 @@
 * pela conjectura de Collatz.
 */
 
-int countCollatz(unsigned int n) {
+int countCollatz(unsigned long n) {
 	int counter = 0;
 
 	while (n != 1) {
@@ -36,9 +36,9 @@ int main()
 	clock_t begin = clock();
 
 /* here, do your time-consuming job */
-	unsigned int inicio, fim, i;
+	unsigned long inicio, fim, i;
 
-	scanf("%u %u", &inicio, &fim);
+	scanf("%lu %lu", &inicio, &fim);
 
 	for (i = inicio; i <= fim; i++)
 		printf("%d\n", countCollatz(i));
